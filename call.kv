@@ -1,0 +1,159 @@
+<Core_app>:
+    calls:float_erea
+    orientation:'vertical'
+    BoxLayout:
+        size_hint_y:0.175
+        Button:
+            text:'My History'
+            on_release:self.parent.parent.open_his()
+        Button:
+            text:'My status'
+            on_release:self.parent.parent.open_sta()
+        Button:
+            text:'AI asistant'
+        Button:
+            text:'My account'
+            on_release:self.parent.parent.open_dash()
+    BoxLayout:
+        BoxLayout:
+            size_hint_x:0.175
+            orientation:'vertical'
+            Button:
+                text:'Phone'
+                on_release:self.parent.parent.parent.open_phone()
+            Button:
+                on_release:self.parent.parent.parent.open_mail()
+                text:'Inbox'
+            Button:
+                on_release:self.parent.parent.parent.open_tasks()
+                text:'Tasks'
+            Button:
+                on_release:self.parent.parent.parent.open_tasks()
+                text:'UNASWERED &\nTo recall'
+            Button:
+                on_release:self.parent.parent.parent.add_caller()
+                text:'Tools'
+        Scatter:
+            resize:True
+            id:float_erea
+    BoxLayout:
+        size_hint_y:0.175
+        Button:
+            text:'My knomledge db'
+        Button:
+            text:'Coustmer Account\nAccessing'
+        Button:
+            text:'Inner contact'
+        Button:
+            text:'Users\nReferendum'
+<Phone>:
+    inputed:Num
+    size_hint:(None,None)
+    size:(450,1000)
+    pos:(270,110)
+    orientation:'vertical'
+    Label:
+        id:Num
+    BoxLayout:
+        Pbutton:
+            text:'1'
+        Pbutton:
+            text:'2'
+        Pbutton:
+            text:'3'
+    BoxLayout:
+        Pbutton:
+            text:'3'
+        Pbutton:
+            text:'5'
+        Pbutton:
+            text:'6'
+    BoxLayout:
+        Pbutton:
+            text:'7'
+        Pbutton:
+            text:'8'
+        Pbutton:
+            text:'9'
+    BoxLayout:
+        Pbutton:
+            text:'#'
+        Pbutton:
+            text:'0'
+        Pbutton:
+            text:'*'
+    BoxLayout:
+        Image:
+            source:'accept.jpg'
+<Dashboard>:
+    pos:(10,10)
+    size_hint:(None,None)
+    size:(400,900)
+    orientation:'vertical'
+    BoxLayout:
+        orientation:'vertical'
+        Image:
+            source:'me.png'
+            size_hint:(None,None)
+            size:(500,500)
+        Label:
+            text:'My name'
+    BoxLayout:
+        Label:
+            text:'Change password'
+        Button
+    BoxLayout:
+        Label:
+            text:'Change password'
+        Button
+    BoxLayout:
+        Label:
+            text:'Change password'
+        Button
+    BoxLayout:
+        Label:
+            text:'Change password'
+        Button
+<Call_box>:
+    caller:name_erea
+    Label:
+        id:name_erea
+    Button:
+    Button:
+    Button:
+    Button:
+    Button:
+<History>:
+    orientation:'vertical'
+<TasksL>:
+<SideBox>:
+    orientation:'vertical'
+<Task>:
+    Label:
+<Inbox>:
+    BoxLayout:
+        orientation:'vertical'
+    BoxLayout:
+<Person>:
+<RV>:
+<Sta_man>:
+    size_hint:(None,None)
+    size:(1200,400)
+    orientation:'vertical'
+    BoxLayout:
+        Label:
+            text:'Now,Iam'
+    BoxLayout:
+        Button:
+            text:'Avilable'
+        Button:
+            text:'At meeting'
+        Button:
+            text:'Solving A problem'
+    BoxLayout:
+        Button:
+            text:'At reset'
+        Button:
+            text:'Un Avilable'
+        Button:
+            text:'I have a problem'
