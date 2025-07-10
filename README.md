@@ -1,7 +1,7 @@
 ---
 title: Call Center GUI
 technologies: Python, Kivy
-ai_enhanced: false
+ai_enhanced: True
 status: completed
 link: https://github.com/muazalamri/Callcenter
 ---
